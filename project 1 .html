@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    
+    
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('hue.jpg');
+        background-repeat: no-repeat;
+        background-size: 2300px 1000px;
+
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        width: 183px;
+        left: 1%;
+        top: 2%;
+        border: 2px solid grey;
+        border-radius: 25px;
+        
+        
+
+        
+        
+    }
+
+    .right{
+        position: absolute;
+        right: 1%;
+        width: 217px;
+        top: 4%;
+        display: inline-block;
+        
+
+    }
+
+    .mid{
+        position: absolute;
+        top: 2%;
+        left: 34%;
+        display: block;
+        width: 639px;
+        border: 2px solid hotpink;
+        border-radius: 15px;
+        border-width: 3px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        color: white;
+    }
+
+    .navbar li a{
+        color: white;
+        margin: 13px;
+        text-decoration: none;
+        font-size: 25px;
+        
+    }
+
+    .left img{
+        
+        width: 182px;
+        height: 151px;
+        filter: invert(100%);
+    }
+
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: grey;
+    }
+    #name{
+        text-align: center;
+    }
+
+    .btn{
+        margin: 0%;
+        background-color: lightblue;
+        border: 2px solid whitesmoke;
+        border-radius: 25px;
+        height: 31px;
+        width: 92px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: grey;
+    }
+
+
+    #mail{
+        position: absolute;
+        right: 10%;
+    }
+
+    .container{
+        border: 4px solid lightblue;
+        border-radius: 32px;
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        display: inline-block;
+        width: 32%;
+        height: 557px;
+    }
+
+    .intro{
+        position: relative;
+        top: 15%;
+        left: 13%;
+        font-size: 31px;
+        color: orange;
+        font-weight: bolder;
+        font-family: cursive;
+        
+    }
+    
+    #name{
+        position: relative;
+        top: 96px;
+        left: 211px;
+        border-radius: 23px;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #age{
+        position: relative;
+        top: 133px;
+        left: 33px;
+        border-radius: 23px;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    #mobile{
+        position: relative;
+        top: 206px;
+        left: -144px;
+        border-radius: 23px;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    #place{
+        position: relative;
+        top: 146px;
+        left: 213px;
+        border-radius: 23px;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .gender{
+        position: relative;
+        top: 236px;
+        left: 30%;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    #game{
+
+        position: relative;
+        top: 34px;
+        width: 34px;
+
+    }
+
+
+    .aggrement{
+        position: relative;
+        top: 319px;
+        width: 389px;
+        font-size: 26px;
+
+
+        
+    }
+
+    #submit{
+
+        position: relative;
+        top: 340px;
+        width: 110px;
+        height: 24px;
+        left: 22%;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+
+    }
+
+    #reset{
+        position: relative;
+        top: 339px;
+        left: 45%;
+        height: 24px;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 110px;
+        font-size: 16px;
+        
+    }
+
+    .video{
+        position: relative;
+        border: 2px solid salmon;
+        
+        width: 24px;
+        height: 24px;
+        top: 453px;
+        left: 1523px;
+    }
+
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="intro"> join the best sports club Now!</div>
+        <form action="backend.php">
+            <input type="text" placeholder="Enter Your Name" id="name">
+            <input type="number" placeholder="       Enter Your Age" id="age">
+            <input type="text" placeholder="Enter Your Phone Number" id="mobile">
+            <input type="text" placeholder="        Locality" id="place">
+
+            <div class="gender">
+                <span>Gender:   </span> Male<input type="radio" name="g">
+            Female<input type="radio" name="g">
+            Other<input type="radio" name="g">
+            </div>
+
+            
+            <div class="aggrement">
+            </select>
+            <input type="checkbox" name="" id="terms" checked>     I agree to all terms and conditions.
+            </div>
+
+            <input type="submit" value="SUBMIT" id="submit">
+            <input type="reset" value="RESET" id="reset">
+            
+        </form>
+    
+    </div>
+
+    <header class="header">
+        <div class="left">
+            <img src="logoo.jpg" alt="">
+            
+            
+            
+
+        </div>
+
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+            
+
+        </div>
+
+        <div class="right">
+            <button class="btn" id="call">
+                Call Us Now
+            </button>
+            
+            <button class="btn" id="mail">
+                E-mail Us
+
+            </button>
+
+        </div>
+
+        
+
+
+    </header>
+
+    <div class="video">
+        <video src="video.mp4" width="400px" controls autoplay></video>
+    </div>
+
+    
+
+
+
+    
+</body>
+</html>
